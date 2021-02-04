@@ -1,2 +1,3 @@
-# blinkoliver-JS2020Q3
-Private repository for @blinkoliver
+# english-for-kids
+#### app for learning english words for kids
+### [demo]()

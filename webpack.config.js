@@ -15,7 +15,7 @@ module.exports = (env, options) => {
     watch: !isProduction,
     entry: ["./src/app.js", "./src/style.scss"],
     output: {
-      path: path.join(__dirname, "/dist/"),
+      path: path.join(__dirname, "/build/"),
       filename: "bundle.js",
     },
 
