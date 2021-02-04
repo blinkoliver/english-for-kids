@@ -23,7 +23,7 @@ const createWordCard = (parrent, elementObj, isGame) => {
 
     const rotateButton = document.createElement('div');
     rotateButton.classList.add('rotate-button');
-    rotateButton.style = 'background-image: url("../../src/assets/img/rotate.svg")';
+    rotateButton.style = 'background-image: url("assets/img/rotate.svg")';
 
     const titleEn = document.createElement('div');
     titleEn.classList.add('title-en');
@@ -35,7 +35,7 @@ const createWordCard = (parrent, elementObj, isGame) => {
 
     const audio = document.createElement('audio');
     audio.setAttribute('preload', 'auto');
-    audio.setAttribute('src', `../../src/assets/audio/${elementObj.word}.mp3`);
+    audio.setAttribute('src', `assets/audio/${elementObj.word}.mp3`);
 
     parrent.append(cardHTMLElement);
     cardHTMLElement.append(front, audio, back);
