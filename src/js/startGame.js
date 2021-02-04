@@ -4,10 +4,10 @@ import renderCategoriesCards from './renderCategoriesCards.js';
 import addToStatistic from './addToStatistic.js';
 
 const startGame = () => {
-  const correctAudio = new Audio('../../src/assets/audio/correct.mp3');
-  const errorAudio = new Audio('../../src/assets/audio/error.mp3');
-  const youWin = new Audio('../../src/assets/audio/youWin.mp3');
-  const youLose = new Audio('../../src/assets/audio/youLose.mp3');
+  const correctAudio = new Audio('assets/audio/correct.mp3');
+  const errorAudio = new Audio('assets/audio/error.mp3');
+  const youWin = new Audio('assets/audio/youWin.mp3');
+  const youLose = new Audio('assets/audio/youLose.mp3');
   const wordsContainer = document.querySelector('.words-container');
   const wordCards = document.querySelectorAll('.word-card-game');
   const repeatButton = document.querySelector('.repeat-btn');
@@ -18,16 +18,16 @@ const startGame = () => {
   const currentCategoryIndex = categoryCards.indexOf(selectCategory);
   const raitRow = document.querySelector('.rait');
   const star = document.createElement('img');
-  star.setAttribute('src', '../../src/assets/img/star.svg');
+  star.setAttribute('src', 'assets/img/star.svg');
   const starWin = document.createElement('img');
-  starWin.setAttribute('src', '../../src/assets/img/star-win.svg');
+  starWin.setAttribute('src', 'assets/img/star-win.svg');
   let errorsCount = 0;
 
   const gameSet = [];
   wordsCards[currentCategoryIndex].forEach((el, index) => {
     const element = [];
     element.push(el.word);
-    element.push(new Audio(`../../src/assets/audio/${el.word}.mp3`));
+    element.push(new Audio(`assets/audio/${el.word}.mp3`));
     element.push(index);
     gameSet.push(element);
   });
@@ -65,7 +65,7 @@ const startGame = () => {
           ">
             <img style="width: 250px;
             margin: 20px;
-            "src="../../src/assets/img/youWin.png">
+            "src="assets/img/youWin.png">
           </div>
           `;
         setTimeout(() => {
@@ -83,7 +83,7 @@ const startGame = () => {
             <img style="
             width: 300px;
             margin: 20px;
-            "src="../../src/assets/img/gameOver.png">
+            "src="assets/img/gameOver.png">
             <p style = "font-size: xx-large;">You made ${errorsCount} mistakes</p>
           </div>
           `;
